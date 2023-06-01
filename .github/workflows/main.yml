@@ -9,10 +9,10 @@ on:
   workflow_dispatch:
   
 jobs:
-  build:
+  build_java:
     runs-on: windows-latest
     
     steps:
+      - uses: actions/checkout@v3
       - name: Start main file
-        run:
-          echo hello, world
+        run: echo hello, world
