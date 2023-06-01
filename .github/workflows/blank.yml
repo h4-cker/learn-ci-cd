@@ -13,9 +13,6 @@ jobs:
     runs-on: windows-latest
     
     steps:
-      - name: dir
-        run: ls -la
-        
       - uses: actions/checkout@v3
       
       - name: start
