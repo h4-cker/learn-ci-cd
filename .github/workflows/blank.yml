@@ -9,6 +9,15 @@ on:
   workflow_dispatch:
   
 jobs:
+  build_matrix:
+    strategy:
+      matrix:
+        os: [1,2,3]
+    runs-on: ubuntu-latest
+    steps:
+      - name: print matrix env
+        run: "echo os: ${{ matrix.os }}"
+
   build_java:
     runs-on: windows-latest
     
