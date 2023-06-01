@@ -10,9 +10,15 @@ on:
   
 jobs:
   build_java:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     
     steps:
+      - name: dir
+        run: ls -la
+        
       - uses: actions/checkout@v3
-      - name: Start main file
-        run: echo hello, world
+      
+      - name: env report
+        run: |
+          ls -la
+          printenv
