@@ -20,5 +20,5 @@ jobs:
       
       - name: start
         run: |
-          javac main.java
-          java main
+          javac Main.java
+          java Main
